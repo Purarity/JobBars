@@ -23,5 +23,5 @@ jobs:
         Expand-Archive -Force latest.zip "$env:AppData\XIVLauncher\addon\Hooks\dev\"
     - name: Build
       run: |
-        dotnet restore -r win XIVCombo.sln
+        dotnet restore -r win JobBars.sln
         dotnet build --configuration Release
