@@ -11,17 +11,22 @@ env:
 
 jobs:
   build:
+
     runs-on: windows-latest
+
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1.0.2
-    - name: Download Dalamud
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Download latest Dalamud build
       run: |
-        Invoke-WebRequest -Uri https://goatcorp.github.io/dalamud-distrib/latest.zip -OutFile latest.zip
-        Expand-Archive -Force latest.zip "$env:AppData\XIVLauncher\addon\Hooks\dev\"
+        cd ..
+        curl -O https://goatcorp.github.io/dalamud-distrib/latest.zip
+        mkdir Dalamud
+        unzip latest.zip -d ./Dalamud/bin
+    - uses: actions/checkout@v2
+    - name: Restore dependencies
+      run: dotnet restore
     - name: Build
-      run: |
-        dotnet restore -r win JobBars.sln
-        dotnet build --configuration Release
+      run: dotnet build --no-restore
