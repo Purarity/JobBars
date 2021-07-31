@@ -8,11 +8,12 @@
         "RepoUrl": "https://github.com/Purarity/JobBars",
         "ApplicableVersion": "any",
         "DalamudApiLevel": 3,
-        "DownloadLinkInstall": "https://raw.githubusercontent.com/Purarity/JobBars/main/latest.zip",
+        https://github.com/Purarity/JobBars/raw/main/latest.zip
+        "DownloadLinkInstall": "https://github.com/Purarity/JobBars/raw/main/latest.zip",
         "IsHide": false,
         "IsTestingExclusive": false,
-        "DownloadLinkTesting": "https://raw.githubusercontent.com/Purarity/JobBars/main/latest.zip",
-        "DownloadLinkUpdate": "https://raw.githubusercontent.com/Purarity/JobBars/main/latest.zip",
+        "DownloadLinkTesting": "https://github.com/Purarity/JobBars/raw/main/latest.zip",
+        "DownloadLinkUpdate": "https://github.com/Purarity/JobBars/raw/main/latest.zip",
         "DownloadCount": 0,
         "LastUpdated": "1627732908"
     }
