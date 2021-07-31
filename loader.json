@@ -1,0 +1,19 @@
+[
+    {
+        "Author": "me",
+        "Name": "Job Bars Test",
+        "Description": "test",
+        "InternalName": "test",
+        "AssemblyVersion": "0.1",
+        "RepoUrl": "https://github.com/Purarity/JobBars",
+        "ApplicableVersion": "any",
+        "DalamudApiLevel": 3,
+        "DownloadLinkInstall": "https://raw.githubusercontent.com/Purarity/JobBars/main/latest.zip",
+        "IsHide": false,
+        "IsTestingExclusive": false,
+        "DownloadLinkTesting": "https://raw.githubusercontent.com/Purarity/JobBars/main/latest.zip",
+        "DownloadLinkUpdate": "https://raw.githubusercontent.com/Purarity/JobBars/main/latest.zip",
+        "DownloadCount": 0,
+        "LastUpdated": "1627732908"
+    }
+]
